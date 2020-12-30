@@ -1,12 +1,12 @@
 //Empieza el codigo nuevo distinto a jumpseller
-<script type="application/javascript">
+//Esconder codigo postal y pais
 $(document).ready(function(){
    // Esconder el Pais y codigo postal dentro del formulario
 	$("#shipping_address_postal").hide();
   $("#shipping_address_country").hide();
 });
-</script>
-  <script type="application/javascript">
+
+  
 $(document).ready(function(){
   //$("#order_customer_phone").attr("pattern","/^(\+?56)?(\s?)(0?9)(\s?)[9876543]\d{7}$/");
   $("#order_customer_phone").attr("placeholder","+569XXXXXXXX");
@@ -22,8 +22,7 @@ $(document).ready(function(){
   
 
 });
-</script>
- <script>
+// Validador de rut 
 $(document).ready(function(){
   addRutValidator($('#order_shipping_address_taxid'));
   addRutValidatorForBillingAddress($('#order_billing_address_taxid'));
@@ -89,4 +88,4 @@ function checkRut(evt) {
     }
     rut.setCustomValidity('');
 }
-</script>
+
